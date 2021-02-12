@@ -19,6 +19,8 @@ module SuspendersTestHelpers
       end
 
       Dir.chdir(APP_NAME) do
+      debug `cat Gemfile`
+
         commit_all
       end
     end
@@ -42,6 +44,8 @@ module SuspendersTestHelpers
       end
 
       Dir.chdir(APP_NAME) do
+      debug `cat Gemfile`
+
         commit_all
       end
     end
