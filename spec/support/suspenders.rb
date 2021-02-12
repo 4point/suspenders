@@ -40,7 +40,7 @@ module SuspendersTestHelpers
       add_fakes_to_path
 
       with_revision_for_honeybadger do
-        debug `#{system_rails_bin} _#{rails_version}_ new #{APP_NAME} -m #{rails_template_path}`
+        debug `#{system_rails_bin} _#{rails_version}_ new #{APP_NAME} -d postgresql -m #{rails_template_path}`
       end
 
       Dir.chdir(APP_NAME) do
