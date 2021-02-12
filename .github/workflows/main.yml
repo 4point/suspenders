@@ -38,3 +38,4 @@ jobs:
       run: bundle exec rake
       env:
         DATABASE_URL: "postgresql://postgres:postgres@localhost:5432/dummy_app_test"
+        DEBUG: 1
